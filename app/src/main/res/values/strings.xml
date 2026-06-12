@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Michael Sombra</string>
+    <string name="channel_name">Servicio de Sombra</string>
+    <string name="channel_desc">Notificación persistente para mantener la sombra activa</string>
+    <string name="notification_text">Sombra activa en la pantalla</string>
+</resources>

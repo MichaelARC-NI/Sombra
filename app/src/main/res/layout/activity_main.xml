@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
-            android:text="Shadow personalizable"
+            android:text="by Michael Antonio Rodriguez Condega"
             android:textSize="14sp"
             android:textColor="#888888" />
 
@@ -184,6 +184,70 @@
             android:textSize="14sp"
             android:textAllCaps="false"
             android:layout_marginBottom="32dp" />
+
+        <!-- Contacto -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#333333"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📱 Contáctame"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnFacebook"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#1877F2"
+            android:text="Facebook"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:drawableStart="@android:drawable/ic_menu_compass"
+            android:drawablePadding="8dp" />
+
+        <Button
+            android:id="@+id/btnTelegram"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#0088cc"
+            android:text="Telegram"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:drawableStart="@android:drawable/ic_menu_send"
+            android:drawablePadding="8dp" />
+
+        <Button
+            android:id="@+id/btnWhatsApp"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#25D366"
+            android:text="WhatsApp"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:drawableStart="@android:drawable/ic_menu_share"
+            android:drawablePadding="8dp" />
+
+        <Button
+            android:id="@+id/btnYouTube"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="#FF0000"
+            android:text="YouTube"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:drawableStart="@android:drawable/ic_menu_gallery"
+            android:drawablePadding="8dp" />
 
     </LinearLayout>
 

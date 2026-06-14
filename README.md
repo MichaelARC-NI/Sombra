@@ -2,9 +2,17 @@
 
 **Sombra lateral personalizable para Android**
 
-**Funciona Con O Sin Acceso Root No Es Necesario Tener Root**
+**Funciona Con O Sin Acceso Root — No Es Necesario Tener Root**
 
 Aplicación que dibuja un degradado oscuro en los bordes laterales de la pantalla, simulando una sombra estilo notch o curvatura. Totalmente personalizable con 8 controles en tiempo real.
+
+---
+
+## ✅ Compatibilidad
+
+- Probada en **Android 13** y **Android 16**
+- Compatible desde **Android 8.0 (API 26)** en adelante
+- No se ha probado en Android 17, pero es probable que funcione
 
 ---
 
@@ -27,39 +35,18 @@ Aplicación que dibuja un degradado oscuro en los bordes laterales de la pantall
 
 ---
 
-## ⚠️ Instalación
+## 📲 Instalación
 
-> **IMPORTANTE**: En algunos dispositivos (especialmente Android 13+ con políticas de seguridad restrictivas como HyperOS, MIUI, ColorOS, OneUI, etc.) el instalador de paquetes predeterminado **puede bloquear la instalación** mostrando errores como *"No se puede instalar"*, *"Archivo dañado"* o simplemente no dejando instalar.
-
-Si te ocurre eso, usa uno de estos métodos alternativos:
-
-### Método 1 — ADB (recomendado)
-
-Conecta el teléfono a la PC con depuración USB activada:
-
-```bash
-adb install MichaelSombra.apk
-```
-
-Si ya está instalada y quieres actualizar:
-
-```bash
-adb install -r MichaelSombra.apk
-```
-
-### Método 2 — Shizuku + MT Manager
-
-1. Activa **Shizuku** en tu dispositivo
-2. Abre **MT Manager** con permisos de Shizuku
-3. Navega a la carpeta donde tienes el APK
-4. Mantén presionado el archivo → **Instalar**
-
-### Método 3 — Instalador de sistema (si funciona)
-
-1. Descarga el APK
+1. Descarga el archivo `MichaelSombra.apk` desde la sección de **Releases**
 2. Ábrelo desde el gestor de archivos
 3. Concede el permiso "Instalar apps desconocidas" si lo pide
 4. Toca **Instalar**
+
+> **Nota**: En algunos dispositivos con políticas restrictivas (HyperOS, MIUI, ColorOS, OneUI, etc.) el instalador predeterminado puede bloquear la instalación. En ese caso, usa ADB:
+>
+> ```bash
+> adb install MichaelSombra.apk
+> ```
 
 ---
 
@@ -116,7 +103,7 @@ El APK firmado estará en `app/build/outputs/apk/release/`.
 ## 📋 Notas técnicas
 
 - **Min SDK**: 26 (Android 8.0)
-- **Target SDK**: 35 + (Android 15 +)
+- **Target SDK**: 35+ (Android 15+)
 - **Lenguaje**: Kotlin
 - **Arquitectura**: Activity + Foreground Service + WindowManager
 - **Ofuscación**: R8 (minifyEnabled = true)
@@ -124,11 +111,9 @@ El APK firmado estará en `app/build/outputs/apk/release/`.
 
 ---
 
-## 📸 Captura
+## 📸 Capturas
 
-
-[Es Asi](./Screenshot_2026-06-14-06-14-04-881_com.google.android.apps.docs.jpg) [Cofiguracionees](./Screenshot_2026-06-14-06-14-13-804_com.michael.sombra.jpg)
-
+[Vista previa](./Screenshot_2026-06-14-06-14-04-881_com.google.android.apps.docs.jpg) · [Configuración](./Screenshot_2026-06-14-06-14-13-804_com.michael.sombra.jpg)
 
 ---
 

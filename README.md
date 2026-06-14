@@ -114,7 +114,7 @@ El APK firmado estará en `app/build/outputs/apk/release/`.
 ## 📋 Notas técnicas
 
 - **Min SDK**: 26 (Android 8.0)
-- **Target SDK**: 35 (Android 15)
+- **Target SDK**: 35 + (Android 15 +)
 - **Lenguaje**: Kotlin
 - **Arquitectura**: Activity + Foreground Service + WindowManager
 - **Ofuscación**: R8 (minifyEnabled = true)

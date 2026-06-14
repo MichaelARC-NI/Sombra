@@ -2,6 +2,8 @@
 
 **Sombra lateral personalizable para Android**
 
+**Funciona Con O Sin Acceso Root No Es Necesario Tener Root**
+
 Aplicación que dibuja un degradado oscuro en los bordes laterales de la pantalla, simulando una sombra estilo notch o curvatura. Totalmente personalizable con 8 controles en tiempo real.
 
 ---

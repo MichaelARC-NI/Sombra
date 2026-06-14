@@ -127,7 +127,7 @@ El APK firmado estará en `app/build/outputs/apk/release/`.
 ## 📸 Captura
 
 
-[Es Asi](./Screenshot_2026-06-14-06-14-04-881_com.google.android.apps.docs.jpg) [Cofiguracionees](./SCREENSHOT_2026-06-14-06-14-13-804_COM.MICHAEL.SOMBRA.JPG)
+[Es Asi](./Screenshot_2026-06-14-06-14-04-881_com.google.android.apps.docs.jpg) [Cofiguracionees](./Screenshot_2026-06-14-06-14-13-804_com.michael.sombra.jpg)
 
 
 ---

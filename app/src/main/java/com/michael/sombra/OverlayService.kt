@@ -127,7 +127,7 @@ class OverlayService : Service() {
             overlayViews.add(viewIzq)
 
             // --- SOMBRA DERECHA ---
-            // Gravity.LEFT + x calculado = separado del borde derecho también
+            // Gravity.RIGHT + x = margin para mantener posicion al rotar pantalla
             val paramsDer = WindowManager.LayoutParams(
                 anchoPx,
                 totalHeight,
@@ -135,8 +135,8 @@ class OverlayService : Service() {
                 flags,
                 PixelFormat.TRANSLUCENT
             )
-            paramsDer.gravity = Gravity.TOP or Gravity.LEFT
-            paramsDer.x = screenWidth - anchoPx - marginPx
+            paramsDer.gravity = Gravity.TOP or Gravity.RIGHT
+            paramsDer.x = marginPx
             paramsDer.y = yPos
 
             val viewDer = ImageView(this)

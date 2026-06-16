@@ -16,4 +16,6 @@ captures/
 .externalNativeBuild/
 .cxx/
 *.log
-*.apk
+app/release.keystore
+drive-screenshots/
+MichaelSombra-v1.2.apk

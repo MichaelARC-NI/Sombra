@@ -151,6 +151,7 @@ class MainActivity : AppCompatActivity() {
         })
 
         actualizarEstado()
+        setupSocialButtons()
     }
 
     // Helper para evitar repetir código en los SeekBars
@@ -177,6 +178,15 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         actualizarEstado()
+    }
+
+    override fun onConfigurationChanged(newConfig: android.content.res.Configuration) {
+        super.onConfigurationChanged(newConfig)
+        // Si la sombra está activa, reenviar configuración al servicio
+        // para que recalcule posiciones con las nuevas dimensiones de pantalla
+        if (OverlayService.activo) {
+            actualizarServicio()
+        }
     }
 
     private fun guardarYPulsarSombra() {
@@ -240,6 +250,54 @@ class MainActivity : AppCompatActivity() {
             }
             .setNegativeButton("Cancelar", null)
             .show()
+    }
+
+    private fun setupSocialButtons() {
+        try {
+            val btnFacebook: Button = findViewById(R.id.btnFacebook)
+            val btnTelegram: Button = findViewById(R.id.btnTelegram)
+            val btnWhatsApp: Button = findViewById(R.id.btnWhatsApp)
+            val btnYouTube: Button = findViewById(R.id.btnYouTube)
+
+            btnFacebook.setOnClickListener {
+                try {
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/share/1D1pfVdbXE/"))
+                    startActivity(intent)
+                } catch (e: Exception) {
+                    Toast.makeText(this, "Error al abrir Facebook: ${e.message}", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            btnTelegram.setOnClickListener {
+                try {
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/Michael_Antonio_Rodriguez"))
+                    startActivity(intent)
+                } catch (e: Exception) {
+                    Toast.makeText(this, "Error al abrir Telegram: ${e.message}", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            btnWhatsApp.setOnClickListener {
+                try {
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/50500000000?text=Hola%20Michael"))
+                    startActivity(intent)
+                } catch (e: Exception) {
+                    Toast.makeText(this, "Error al abrir WhatsApp: ${e.message}", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            btnYouTube.setOnClickListener {
+                try {
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/@MichaelAntonioRodriguezCondega"))
+                    startActivity(intent)
+                } catch (e: Exception) {
+                    Toast.makeText(this, "Error al abrir YouTube: ${e.message}", Toast.LENGTH_SHORT).show()
+                }
+            }
+        } catch (e: Exception) {
+            // Si no se encuentran los botones (vista de contacto no disponible), ignorar silenciosamente
+            android.util.Log.w("MainActivity", "Botones de redes sociales no disponibles: ${e.message}")
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

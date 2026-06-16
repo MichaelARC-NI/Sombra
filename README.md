@@ -121,3 +121,22 @@ El APK firmado estará en `app/build/outputs/apk/release/`.
 
 - **Repositorio**: https://github.com/MichaelARC-NI/Sombra
 - **Reportar errores**: https://github.com/MichaelARC-NI/Sombra/issues
+
+---
+
+## 📱 Contacto
+
+**Desarrollador:** Michael Antonio Rodriguez Condega
+
+- **Facebook:** [Michael Antonio Rodriguez Condega](https://www.facebook.com/share/1D1pfVdbXE/)
+- **Telegram:** [@Michael_Antonio_Rodriguez](https://t.me/Michael_Antonio_Rodriguez)
+- **Email:** androidmovil@proton.me
+- **WhatsApp:** [Escribirme](https://wa.me/50500000000?text=Hola%20Michael)
+- **YouTube:** [@MichaelAntonioRodriguezCondega](https://www.youtube.com/@MichaelAntonioRodriguezCondega)
+
+---
+
+## 📜 Licencia
+
+Este proyecto se distribuye bajo la licencia MIT.  
+© 2026 Michael Antonio Rodriguez Condega

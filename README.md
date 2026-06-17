@@ -132,7 +132,7 @@ El APK firmado estará en `app/build/outputs/apk/release/`.
 - **Telegram:** [@Michael_Antonio_Rodriguez](https://t.me/Michael_Antonio_Rodriguez)
 - **Email:** androidmovil@proton.me
 - **WhatsApp:** [Escribirme](https://wa.me/50583341349?text=Hola%20Michael)
-- **YouTube:** [@MichaelAntonioRodriguezCondega](https://www.youtube.com/@MichaelAntonioRodriguezCondega)
+- **YouTube:** [@androidmovil](https://youtube.com/@androidmovil?si=dqzoWBDy1EsNaM7v)
 
 ---
 

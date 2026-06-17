@@ -288,7 +288,7 @@ class MainActivity : AppCompatActivity() {
 
             btnYouTube.setOnClickListener {
                 try {
-                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/@MichaelAntonioRodriguezCondega"))
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://youtube.com/@androidmovil?si=dqzoWBDy1EsNaM7v"))
                     startActivity(intent)
                 } catch (e: Exception) {
                     Toast.makeText(this, "Error al abrir YouTube: ${e.message}", Toast.LENGTH_SHORT).show()

@@ -279,7 +279,7 @@ class MainActivity : AppCompatActivity() {
 
             btnWhatsApp.setOnClickListener {
                 try {
-                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/573115397930?text=Hola%20Michael"))
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/50500000000?text=Hola%20Michael"))
                     startActivity(intent)
                 } catch (e: Exception) {
                     Toast.makeText(this, "Error al abrir WhatsApp: ${e.message}", Toast.LENGTH_SHORT).show()

@@ -32,12 +32,13 @@ Aplicación que dibuja un degradado oscuro en los bordes laterales de la pantall
 - **Servicio en primer plano (Foreground Service)** con notificación silenciosa para que el sistema no la cierre
 - **La sombra es "intocable"**: no bloquea los toques ni el enfoque (flags `FLAG_NOT_TOUCHABLE` + `FLAG_NOT_FOCUSABLE`)
 - **Cobertura total**: usa `FLAG_LAYOUT_IN_SCREEN` + `FLAG_LAYOUT_NO_LIMITS` para cubrir la barra de estado y bordes
+- **Corrección automática al rotar pantalla**: las sombras se reajustan automáticamente al cambiar la orientación
 
 ---
 
 ## 📲 Instalación
 
-1. Descarga el archivo `MichaelSombra.apk` desde la sección de **Releases**
+1. Descarga el archivo `MichaelSombra-v1.3.apk` desde la sección de **Releases**
 2. Ábrelo desde el gestor de archivos
 3. Concede el permiso "Instalar apps desconocidas" si lo pide
 4. Toca **Instalar**
@@ -45,7 +46,7 @@ Aplicación que dibuja un degradado oscuro en los bordes laterales de la pantall
 > **Nota**: En algunos dispositivos con políticas restrictivas (HyperOS, MIUI, ColorOS, OneUI, etc.) el instalador predeterminado puede bloquear la instalación. En ese caso, usa ADB:
 >
 > ```bash
-> adb install MichaelSombra.apk
+> adb install MichaelSombra-v1.3.apk
 > ```
 
 ---
@@ -114,6 +115,17 @@ El APK firmado estará en `app/build/outputs/apk/release/`.
 ## 📸 Capturas
 
 [Vista previa](./Screenshot_2026-06-14-06-14-04-881_com.google.android.apps.docs.jpg) · [Configuración](./Screenshot_2026-06-14-06-14-13-804_com.michael.sombra.jpg)
+
+---
+
+## 📜 Historial de versiones
+
+| Versión | Fecha | Cambios |
+|---------|-------|---------|
+| **v1.3** | 2026 | Corrección de sombras al rotar pantalla, botones de redes sociales agregados (Facebook, Telegram, WhatsApp, YouTube), actualización de contactos |
+| **v1.2** | 2026 | 8 controles, servicio en primer plano, persistencia de configuración, firma APK |
+| **v1.1** | 2026 | Correcciones menores y mejoras de compatibilidad |
+| **v1.0** | 2026 | Versión inicial con funcionalidad básica de sombras laterales |
 
 ---
 
